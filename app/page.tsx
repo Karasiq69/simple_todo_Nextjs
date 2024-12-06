@@ -1,7 +1,7 @@
 import TodosView from "@/components/TodosView";
 import AddTodo from "@/components/AddTodo";
 import {Button} from "@/components/ui/button";
-import {FolderRoot, Github, MonitorCog, UserIcon} from "lucide-react";
+import {FolderRoot, MonitorCog, UserIcon} from "lucide-react";
 import Link from "next/link";
 
 const links = [
