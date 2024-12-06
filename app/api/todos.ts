@@ -5,6 +5,7 @@ import {Todo} from "@/types/todo";
 
 export const getTodos = async () => {
     const response = await axiosInstance.get<Todo[]>('/todo')
+    console.log('TODOS:',response.data)
     return response.data
 }
 
