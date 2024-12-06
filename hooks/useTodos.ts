@@ -20,7 +20,6 @@ export const useTodos = ({ initialTodos = [] }: UseTodosProps = {}) => {
       setIsLoading(true);
       setError(null);
       await addTodo({ title });
-      router.refresh();
     } catch (e) {
       setError('Failed to add todo');
       console.error(e);
@@ -34,7 +33,6 @@ export const useTodos = ({ initialTodos = [] }: UseTodosProps = {}) => {
       setIsLoading(true);
       setError(null);
       await editTodo(id, { isCompleted });
-      router.refresh();
     } catch (e) {
       setError('Failed to update todo');
       console.error(e);
@@ -48,7 +46,6 @@ export const useTodos = ({ initialTodos = [] }: UseTodosProps = {}) => {
       setIsLoading(true);
       setError(null);
       await deleteTodo(id);
-      router.refresh();
     } catch (e) {
       setError('Failed to delete todo');
       console.error(e);
